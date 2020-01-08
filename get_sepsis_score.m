@@ -4,8 +4,12 @@ function [score, label] = get_sepsis_score(data, model)
 Xd1= size(data,1);
 score = 0;
 label = 0;
-data_f = getFeatures(data);
 
+if Xd1==1
+	return;
+end
+
+data_f = getFeatures(data);
 data_norm = (data_f - model{1,4}.standartize_values.mean) ./ model{1,4}.standartize_values.std;
 
 if Xd1<10
