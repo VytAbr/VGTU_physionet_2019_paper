@@ -30,7 +30,7 @@ elseif Xd1<61
 else
     %      for long ICU time
     try
-        score = predict(model{1,2}.net, data_norm');
+        score = predict(model{1,3}.net, data_norm');
     catch
         disp('error 3')
         disp(Xd1)
