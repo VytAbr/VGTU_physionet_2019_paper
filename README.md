@@ -11,7 +11,7 @@ This prediction code uses three scripts:
 Check the code in these files for the input and output formats for the `load_sepsis_model` and `get_sepsis_score` functions.
 
 VGTU team:
-* `load_sepsis_model` function load 4 files into struct 'model_s' 'model_m', 'model_l' and 'standartize_values_ab'.
+* `load_sepsis_model` function load 4 files into struct `model_s`, `model_m`, `model_l` and `standartize_values_ab`.
 * `get_sepsis_score.m` function runs 'getFeatures' to calculate our features. Then normalizes using 'standartize_values_ab' model. And switches to duration for LSTM classier. 
 * Must files additionally included to example code are 'model_s' 'model_m','model_l', 'standartize_values_ab', 'getFeatures'.
 
