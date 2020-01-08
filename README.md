@@ -18,6 +18,9 @@ You can run this prediction code by starting MATLAB and running
 
 where `input_directory` is a directory for input data files and `output_directory` is a directory for output prediction files.  The PhysioNet/CinC 2019 webpage provides a training database with data files and a description of the contents and structure of these files.
 
+To run prediction and compute scores:
+In folder 'toTest' there are 2 files. Place them in same folder with driver, then run main-short.m
+
 ## Details
 
 See the PhysioNet webpage for more details, including instructions for the other files in this repository.
